@@ -1,0 +1,13 @@
+#include "main.h"
+
+// (MoveBlock)
+typedef struct 
+{
+    uint32_t steps;        // ????? ????
+    uint32_t step_interval; // ????? ????? ??? ???? ?? (us)
+    uint8_t  direction;    // ???
+    char     axis;         // ???? (x,y,z...)
+} MoveBlock;
+
+uint8_t Queue_Push(MoveBlock *block) ;
+uint8_t Queue_Pop(MoveBlock *block) ;

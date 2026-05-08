@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"3-send-position\startup_stm32f103xb.o"
+"3-send-position\main.o"
+"3-send-position\stm32f1xx_it.o"
+"3-send-position\stm32f1xx_hal_msp.o"
+"3-send-position\stm32f1xx_hal_gpio_ex.o"
+"3-send-position\stm32f1xx_hal_uart.o"
+"3-send-position\stm32f1xx_hal.o"
+"3-send-position\stm32f1xx_hal_rcc.o"
+"3-send-position\stm32f1xx_hal_rcc_ex.o"
+"3-send-position\stm32f1xx_hal_gpio.o"
+"3-send-position\stm32f1xx_hal_dma.o"
+"3-send-position\stm32f1xx_hal_cortex.o"
+"3-send-position\stm32f1xx_hal_pwr.o"
+"3-send-position\stm32f1xx_hal_flash.o"
+"3-send-position\stm32f1xx_hal_flash_ex.o"
+"3-send-position\stm32f1xx_hal_exti.o"
+"3-send-position\system_stm32f1xx.o"
+"3-send-position\myapp.o"
+"3-send-position\readenc.o"
+"3-send-position\stm32printfuart.o"
+"3-send-position\time.o"
+"3-send-position\command_parser.o"
+--library_type=microlib --strict --scatter "3-Send-position\3-Send-position.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "3-Send-position.map" -o 3-Send-position\3-Send-position.axf
